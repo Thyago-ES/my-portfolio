@@ -14,3 +14,11 @@ function toggleMenu() {
 		nav.style.display = "none";
 	}
 }
+
+function openModal(numero) {
+	document.getElementById(`modal${numero}`).classList.add("active");
+}
+
+function closeModal(numero) {
+	document.getElementById(`modal${numero}`).classList.remove("active");
+}
