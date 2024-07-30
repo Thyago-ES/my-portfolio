@@ -1,256 +1,382 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
+		<!-- Meta tags -->
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- title -->
+		<title>Thyago Rafael</title>
+		<!-- Icon -->
 		<link
-			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="shortcut icon"
+			href="/assets/icon.png"
+			type="image/png"
+		/>
+		<!-- CSS -->
+		<link
+			rel="stylesheet"
+			href="css/extends.css"
+		/>
+		<!-- Fonts -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="shortcut icon" href="#" type="image/x-icon" />
-		<link rel="stylesheet" href="./styles/style.css" />
-
-		<title>Thyago Rafael de Carvalho</title>
 	</head>
 	<body>
-		<header>
-			<a href="#" class="logo">Portfolio</a>
-
-			<div class="nav">
-				<a href="#home">Home</a>
-				<a href="#portfolio">Projects</a>
-				<a href="#contact">Contact</a>
-				<a href="#about">About</a>
+		<!-- navbar -->
+		<nav class="navbar">
+			<div class="navbar__content max-width mb-0">
+				<a href="/">TRafael</a>
+				<ul class="navbar__links">
+					<li><a href="#header">Início</a></li>
+					<li><a href="#about">Sobre</a></li>
+					<li><a href="#skills">Habilidades</a></li>
+					<li><a href="#projects">Projetos</a></li>
+					<li><a href="#footer">Contato</a></li>
+				</ul>
+				<div class="navbar__mobile">
+					<img
+						src="assets/menu.svg"
+						alt="menu"
+						class="burguer"
+					/>
+					<ul class="mobile__links">
+						<li><a href="#header">Início</a></li>
+						<li><a href="#about">Sobre</a></li>
+						<li><a href="#skills">Habilidades</a></li>
+						<li><a href="#projects">Projetos</a></li>
+						<li><a href="#footer">Contato</a></li>
+					</ul>
+				</div>
 			</div>
+		</nav>
 
-			<div class="nav-responsive">
-				<a href="#home">Home</a>
-				<a href="#portfolio">Projects</a>
-				<a href="#contact">Contact</a>
-				<a href="#about">About</a>
+		<!-- header -->
+		<header
+			id="header"
+			class="max-width"
+		>
+			<div class="header__left">
+				<h2>Olá!</h2>
+				<h1>Sou Thyago Rafael</h1>
+				<h2>Desenvolvedor Front End</h2>
+				<p>Transformando linhas de código em soluções.</p>
+				<a
+					href="#about"
+					class="btn btn-primary"
+					>Saiba Mais!</a
+				>
 			</div>
-
-			<div class="menu-hamburguer">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
+			<div class="header__right">
+				<div class="header__image">
+					<img
+						src="assets/thyago-rafael.jpg"
+						alt="Lucas Silva"
+						class="lucas"
+					/>
+					<img
+						src="assets/abstract.svg"
+						alt="background"
+						class="background"
+					/>
+				</div>
 			</div>
 		</header>
 
-		<section class="home" id="home">
-			<div class="home-content">
-				<h3>Hello, I'm</h3>
-				<h1>Thyago Rafael</h1>
-				<h3>Front-End <span>Developer</span></h3>
-
-				<p>Turning lines of code into solutions.</p>
-
-				<div class="social-media">
-					<a
-						href="https://www.linkedin.com/in/thyago-rafael-287520278/"
-						target="_blank"
-						rel="noreferrer noopener"
-						><i class="bx bxl-linkedin"></i
-					></a>
-					<a
-						href="https://github.com/Thyago-ES"
-						target="_blank"
-						rel="noreferrer noopener"
-						><i class="bx bxl-github"></i
-					></a>
-					<a
-						href="https://www.instagram.com/thyago.rc/"
-						target="_blank"
-						rel="noreferrer noopener"
-						><i class="bx bxl-instagram"></i
-					></a>
-				</div>
-
-				<div>
-					<a href="#" class="btn">Download CV</a>
-				</div>
-			</div>
-
-			<div class="home-img">
-				<img src="assets/pessoa.png" alt="Profile picture" />
-				<!-- Pegar imagem e tirar o fundo no Adobe Express -->
-			</div>
-		</section>
-
-		<section class="portfolio" id="portfolio">
-			<h2>Latest Projects</h2>
-
-			<div class="portfolio-container">
-				<div class="portfolio-box" onclick="openModal('1')">
-					<img src="./assets/githubFinder.png" alt="Project 01" />
-
-					<div class="portfolio-layer">
-						<h4>Github Finder</h4>
-						<div class="btns-portfolio">
-							<a href="#"><i class="bx bxl-github"></i></a>
-							<a href="#"><i class="bx bx-link-external"></i></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="modal active" id="modal1">
-					<button onclick="closeModal('1')">Fechar</button>
-					<div class="modal-container">
-						<img src="./assets/githubFinder.png" alt="Project 1" />
-
-						<div class="modal-content">
-							<h4>Buscador GitHub</h4>
-							<div>
-								<a href="#"><i class="bx bxl-github"></i></a>
-								<a href="#"><i class="bx bx-link-external"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="portfolio-box" onclick="openModal('2')">
-					<img src="./assets/churrascometer.png" alt="Project 02" />
-
-					<div class="portfolio-layer">
-						<h4>Churrascometer</h4>
-						<div class="btns-portfolio">
-							<a href="#"><i class="bx bxl-github"></i></a>
-							<a href="#"><i class="bx bx-link-external"></i></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="modal" id="modal2">
-					<button onclick="closeModal('2')">Fechar</button>
-					<div class="modal-container">
-						<img src="./assets/churrascometer.png" alt="Project 1" />
-
-						<div class="modal-content">
-							<h4>Buscador GitHub</h4>
-							<div>
-								<a href="#"><i class="bx bxl-github"></i></a>
-								<a href="#"><i class="bx bx-link-external"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="portfolio-box" onclick="openModal('3')">
-					<img src="./assets/currencyConverter.png" alt="Project 03" />
-
-					<div class="portfolio-layer">
-						<h4>Currency Converter</h4>
-						<div class="btns-portfolio">
-							<a href="#"><i class="bx bxl-github"></i></a>
-							<a href="#"><i class="bx bx-link-external"></i></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="modal" id="modal3">
-					<button onclick="closeModal('3')">Fechar</button>
-					<div class="modal-container">
-						<img src="./assets/currencyConverter.png" alt="Project 1" />
-
-						<div class="modal-content">
-							<h4>Buscador GitHub</h4>
-							<div>
-								<a href="#"><i class="bx bxl-github"></i></a>
-								<a href="#"><i class="bx bx-link-external"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="portfolio-box" onclick="openModal('4')">
-					<img src="./assets/noticias.png" alt="Project 04" />
-
-					<div class="portfolio-layer">
-						<h4>Dev Games</h4>
-						<div class="btns-portfolio">
-							<a href="#"><i class="bx bxl-github"></i></a>
-							<a href="#"><i class="bx bx-link-external"></i></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="modal" id="modal4">
-					<button onclick="closeModal('4')">Fechar</button>
-					<div class="modal-container">
-						<img src="./assets/noticias.png" alt="Project 1" />
-
-						<div class="modal-content">
-							<h4>Buscador GitHub</h4>
-							<div>
-								<a href="#"><i class="bx bxl-github"></i></a>
-								<a href="#"><i class="bx bx-link-external"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="contact" id="contact">
-			<h2>Contact <span>Me!</span></h2>
-
-			<form>
-				<div class="input-box">
-					<input type="email" placeholder="Email" />
-
-					<input type="text" placeholder="Subject" />
-				</div>
-
-				<textarea cols="30" rows="8" placeholder="Message"></textarea>
-
-				<a href="#" class="btn">Send Message</a>
-			</form>
-		</section>
-
-		<section class="about" id="about">
-			<div class="about-img">
-				<img src="assets/pessoa.png" alt="About me" />
-			</div>
-
-			<div class="about-content">
-				<h3>About Me</h3>
-				<h1>Front-End <span>Developer</span></h1>
-
+		<!-- Sobre -->
+		<section
+			id="about"
+			class="about max-width"
+		>
+			<div class="about__left">
+				<h2 class="secondary-title">Além do código: quem sou eu?</h2>
 				<p>
-					I am a lover of technology, I believe that with each evolution of it,
-					our lives will get better and better. That's why I study every day to
-					be able to participate in this quest for constant evolution and I'm
-					willing to always do my best to contribute to this journey.
+					Que tal se conectar comigo nas redes sociais abaixo e saber mais
+					sobre meu trabalho?
 				</p>
-
-				<div class="social-media">
-					<a
-						href="https://www.linkedin.com/in/thyago-rafael-287520278/"
-						target="_blank"
-						rel="noreferrer noopener"
-						><i class="bx bxl-linkedin"></i
-					></a>
-					<a
-						href="https://github.com/Thyago-ES"
-						target="_blank"
-						rel="noreferrer noopener"
-						><i class="bx bxl-github"></i
-					></a>
-					<a
-						href="https://www.instagram.com/thyago.rc/"
-						target="_blank"
-						rel="noreferrer noopener"
-						><i class="bx bxl-instagram"></i
-					></a>
-				</div>
+				<ul>
+					<li>
+						<a
+							href="https://www.instagram.com/thyago.rc/"
+							target="_blank"
+							rel="noreferrer noopener"
+							><img
+								src="assets/instagram.svg"
+								alt="Instagram"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/thyago-rafael-287520278/"
+							target="_blank"
+							rel="noreferrer noopener"
+							><img
+								src="assets/linkedin.svg"
+								alt="Linkedin"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://github.com/Thyago-ES"
+							target="_blank"
+							rel="noreferrer noopener"
+							><img
+								src="assets/github.svg"
+								alt="Github"
+						/></a>
+					</li>
+				</ul>
+			</div>
+			<div class="about__right">
+				<h3 class="tertiary-title mb-m">
+					Desenvolvedor front end apaixonado por tecnologia e soluções
+					criativas
+				</h3>
+				<p>
+					Olá, eu sou Thyago Rafael, um desenvolvedor front end apaixonado
+					por tecnologia e inovação. Acredito que, com o conhecimento
+					necessário em desenvolvimento, podemos criar soluções que mudarão
+					a vida das pessoas. Por isso entrei nessa gigantesca área, pois
+					quero ser um dos responsaveis por melhorar a vida de várias
+					pessoas juntamente com a minha equipe, entregando o produto com a
+					melhor qualidade possível e sempre dentro do prazo.
+				</p>
+				<p>
+					Comecei do zero no desenvolvimento web, e hoje sou um expert em
+					Front end e estou sempre buscando aprender mais usurfruindo da
+					minha habilidade de rápida aprendizagem. A cada dia me tornando
+					um profissional cada vez mais capacitado
+				</p>
 			</div>
 		</section>
 
-		<footer>
-			<p>Copyright &copy; 2024 by &lt;/Thyago&gt;. All rights reserved.</p>
-		</footer>
+		<!-- habilidades -->
+		<section
+			id="skills"
+			class="skills"
+		>
+			<div class="skills__content max-width">
+				<h2 class="tertiary-title">Minha caixinha de ferramentas</h2>
+				<p class="description">
+					Descubra as habilidades e ferramentas que domino e que me
+					permitem criar soluções criativas e funcionais para meus
+					clientes.
+				</p>
+				<ul>
+					<li class="skills__item">
+						<div class="image-container">
+							<img
+								src="assets/notebook.png"
+								alt="Frameworks"
+							/>
+						</div>
+						<h3>Frameworks e bibliotecas</h3>
+						<p>
+							Experiência com frameworks e bibliotecas como React para
+							construir interfaces de usuário eficientes e escaláveis.
+						</p>
+					</li>
+					<li class="skills__item">
+						<div class="image-container">
+							<img
+								src="assets/colors.png"
+								alt="Web Design"
+							/>
+						</div>
+						<h3>Web Design</h3>
+						<p>
+							Capacidade de criar layouts que funcionam bem em diversos
+							dispositivos, utilizando técnicas como flexbox, grid layout
+							e media queries.
+						</p>
+					</li>
+					<li class="skills__item">
+						<div class="image-container">
+							<img
+								src="assets/phone.png"
+								alt="UX/UI Design"
+							/>
+						</div>
+						<h3>UX/UI Design</h3>
+						<p>
+							Compreensão básica dos princípios de UX/UI para criar
+							interfaces intuitivas e atraentes, focando na usabilidade e
+							na estética.
+						</p>
+					</li>
+					<li class="skills__item">
+						<div class="image-container">
+							<img
+								src="assets/files.png"
+								alt="Gerenciamentos de versões"
+							/>
+						</div>
+						<h3>Gerenciamentos de versões</h3>
+						<p>
+							Familiaridade com Git para gerenciar código e colaborar com
+							outros desenvolvedores, além de utilizar o GitHub para
+							armazenar meu código.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-		<script src="./scripts/script.js"></script>
+		<!-- Projetos -->
+		<section
+			id="projects"
+			class="projects max-width"
+		>
+			<div class="projects__content">
+				<h2 class="secondary-title">Projetos em Destaque</h2>
+				<p>
+					De ideias abstratas a projetos bem-sucedidos, aqui estão alguns
+					dos meus trabalhos mais recentes:
+				</p>
+			</div>
+			<ul>
+				<li>
+					<div class="image">
+						<img
+							src="assets/dmovies.png"
+							alt="Website de filmes"
+						/>
+					</div>
+					<div class="projects__info">
+						<h3 class="tertiary-title">Website de filmes DMovies</h3>
+						<p>
+							Website desenvolvido para a empresa DMovies. A plataforma
+							exibe uma lista de filmes populares, permite que os
+							usuários busquem filmes por tìtulo e vejam detalhes de um
+							filme.
+						</p>
+						<a
+							href="https://github.com/Thyago-ES/DMovies"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Saiba mais &rarr;</a
+						>
+					</div>
+				</li>
+				<li class="projects__reversed-list">
+					<div class="image">
+						<img
+							src="assets/buscador-github.png"
+							alt="Buscador Github"
+						/>
+					</div>
+					<div class="projects__info">
+						<h3 class="tertiary-title">Buscador de perfis GitHub</h3>
+						<p>
+							Um buscador de perfis GitHub que permite pesquisar perfis
+							de usuários e exibe seus repositórios. Utilizando a API do
+							GitHub, o aplicativo exibe detalhes como nome, avatar,
+							seguindo e seguidores. Também possui um filtro de
+							linguagens para a lista de repositórios.
+						</p>
+						<a
+							href="https://github.com/Thyago-ES/Buscador-GitHub"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Repositório</a
+						>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img
+							src="assets/devgames.png"
+							alt="Landing page DevGames"
+						/>
+					</div>
+					<div class="projects__info">
+						<h3 class="tertiary-title">
+							Landing page para a plataforma DevGames
+						</h3>
+						<p>
+							Landing page desenvolvida para a DevGames, promovendo seus
+							serviços de desenvolvimento de jogos e capturando leads. A
+							página é responsiva, com design moderno e formulário
+							integrado para captação de contatos.
+						</p>
+						<a
+							href="https://github.com/Thyago-ES/DevGames"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Repositório</a
+						>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="footer__content max-width mb-0">
+				<h2 class="tertiary-title mb-s">Vamos conversar?</h2>
+				<p class="mb-m">
+					Ficarei feliz em saber mais sobre seus projetos e como podemos
+					trabalhar juntos para torná-los realidade.
+				</p>
+				<div class="footer__contact mb-m">
+					<span class="mb-m">thyagorafael57@gmail.com</span>
+					<span>61 98463-0230</span>
+				</div>
+				<ul class="mb-l">
+					<li>
+						<a
+							href="https://www.instagram.com/thyago.rc/"
+							target="_blank"
+							rel="noreferrer noopener"
+							><img
+								src="assets/instagram.svg"
+								alt="Instagram"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/thyago-rafael-287520278/"
+							target="_blank"
+							rel="noreferrer noopener"
+							><img
+								src="assets/linkedin.svg"
+								alt="Linkedin"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://github.com/Thyago-ES"
+							target="_blank"
+							rel="noreferrer noopener"
+							><img
+								src="assets/github.svg"
+								alt="Github"
+						/></a>
+					</li>
+				</ul>
+				<p class="footer__copyright">
+					© 2024 Thyago Rafael. Todos os direitos reservados.
+				</p>
+			</div>
+		</footer>
+		<!-- script -->
+		<script src="scripts/index.js"></script>
 	</body>
 </html>
